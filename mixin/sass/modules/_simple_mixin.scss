@@ -1,0 +1,12 @@
+// simple mixin
+// how to make mixin fucntion is just like this
+// mixin name_fucntion {the scripts}
+// ex :
+@mixin inline-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+  }
+}

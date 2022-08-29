@@ -1,0 +1,59 @@
+// basic css
+$background_color: lightgreen;
+$heading_color: #000000;
+$text_color: #0001;
+
+// 1. main-nesting
+// .main {
+//   background-color: $background_color;
+//   .main-heading {
+//     font-size: 2em;
+//     color: $heading_color;
+//   }
+// }
+
+// 2 parent 1 child
+// .main,
+// footer {
+//   h1,
+//   p {
+//     letter-spacing: 1px;
+//   }
+// }
+
+// 3. parent in child
+
+// .main {
+//   .container & {
+//     background-color: $background_color;
+//   }
+// }
+
+// selector key
+
+// .main {
+//   // thats mean is main background-color;
+//   & {
+//     background-color: $background_color;
+//   }
+//   &:hover {
+//     background-color: $background_color -10%;
+//   }
+// }
+
+//5. same name but diferent class
+// ex : parrent is main , child class is main-heading
+.main {
+  // simple way
+  // &-heading {
+  //   color: $heading_color;
+  // }
+  // nesting way
+  // & &-heading {
+  //   color: $heading_color;
+  // }
+  // simple nesting way
+  #{&}-heading {
+    color: $heading_color;
+  }
+}

@@ -1,0 +1,35 @@
+// css
+// .header ul,
+// .footer ul {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+// }
+
+// .header ul li,
+// .footer ul li {
+//   display: inline-block;
+// }
+
+// sass
+
+// mixin
+// modules
+/* 
+cara penggunaaan :
+1. beri nama file : _namafile.scss 
+2. dipindahkan saja file yang di pisah 
+3. lalu ketik "@import"namafile" (tanpa "_")
+4. kalo banyak gabungin jadi satu contoh :
+    @import "simple_mixin", "warna_mixin";
+
+*/
+// ex :
+@import "modules/simple_mixin", "modules/argumen_mixin", "modules/header",
+  "modules/footer";
+
+// penggunaan @use
+// @use "modules/simple_mixin";
+// @use "modules/argumen_mixin";
+// @use "modules/header";
+// @use "modules/footer";

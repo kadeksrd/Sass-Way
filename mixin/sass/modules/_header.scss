@@ -1,0 +1,16 @@
+// penggunaan use
+// @use "simple_mixin";
+// call the function mixin just like :
+// @include name_function()
+.header ul {
+  // penggunaan use
+  // @include simple_mixin.inline-list();
+  @include inline-list();
+  li {
+    background-color: #000;
+    padding: 0.7em;
+    a {
+      color: white;
+    }
+  }
+}

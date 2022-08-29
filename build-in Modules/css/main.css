@@ -1,0 +1,19 @@
+h1 {
+  color: orange;
+  font-family: Arial, Helvetica, Sans-serif;
+  font-size: 3em;
+}
+
+/* adjust-color($color,
+$red:null, $green: null, $blue: null,
+$hue: null, $saturation: null, 
+$lightness:null, $whitteness:null, 
+$blackness:null,$alpha: null
+)
+
+note : nilai warna 1-255
+*/
+h1 {
+  color: orange;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,31 @@
+// argumen on mixin
+// center flex function
+// cara buat @mixin parameter : @mixin flex-center (parameter1,parameter2,...,){aksinya}
+// cara nampilinnya @include nama_mixin(aksi untuk parameternya)
+// note parameter di tulis dalem aksi di css misal background-color: $nama_parameter;
+
+// cara buat default parameter ex @mixin name_function ($direction: name_default_of_css)
+// ex :
+@mixin flex-center($direction: row, $space: center) {
+  display: flex;
+  justify-content: $space;
+  align-items: center;
+  flex-direction: $direction;
+}
+// include
+// nanti diinclude seperti ini : @include nama_mixin(yellow);
+.container {
+  @include flex-center(row-reverse, space-between);
+  width: 600px;
+  height: 400px;
+  background-color: #eaeaea;
+  .box {
+    margin: 0px 5px;
+    width: 60px;
+    height: 60px;
+    background-color: #bada20;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+  }
+}

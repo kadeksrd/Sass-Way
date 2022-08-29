@@ -1,0 +1,56 @@
+// css variabels
+// :root {
+//   --primary-color: #ffff;
+//   --secondary-color: grey;
+//   --heading-color: #e07a5f;
+//   --paragraph-color: #0000 -25%;
+// }
+
+// // cara manggil varibael
+// // var (--variabel_name)
+// body {
+//   background-color: var(--primary-color);
+// }
+// h1 {
+//   color: var(--heading-color);
+// }
+// p {
+//   color: var(--paragraph-color);
+// }
+
+// sass-Variabels
+$primary-color: #ffff;
+$secondary-color: grey;
+$paragraph-color: yellow;
+// cara manggil varibel
+body {
+  background-color: $primary-color;
+}
+h1 {
+  // global in lokal scopes
+  $heading-color: #e07a5f !global;
+  color: $heading-color;
+}
+// variabel same name but diferent means
+// ex : its belows;
+h2 {
+  color: $paragraph-color;
+}
+p {
+  // lokal scopes
+  $paragraph-color: #0000 -25%;
+  color: $paragraph-color;
+}
+
+// mapping
+$alert: (
+  "danger": red,
+  "sucess": green,
+  "warning": yellow,
+);
+
+// how to call the mapping just like this
+// map-get($variabel, "child")
+h1 {
+  color: map-get($alert, "success");
+}

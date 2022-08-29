@@ -1,0 +1,14 @@
+// penggunaan use
+// @use "simple_mixin";
+.footer ul {
+  // penggunaan use
+  // @include simple_mixin.inline-list();
+  @include inline-list();
+  li {
+    background-color: salmon;
+    padding: 0.4em;
+    a {
+      color: white;
+    }
+  }
+}

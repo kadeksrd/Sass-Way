@@ -1,0 +1,20 @@
+// base css
+$main_color: DarkGrey;
+// base font
+$main_font: helvetica;
+$secondary_font: Arial;
+$color_main_font: #000;
+$color_second_font: rgb(75, 75, 75);
+
+// css
+header {
+  background-color: $main_color;
+  h1 {
+    font-family: $main_font;
+    color: $color_main_font;
+  }
+  p {
+    font-family: $secondary_font;
+    color: $color_second_font;
+  }
+}
